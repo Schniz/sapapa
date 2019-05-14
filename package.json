@@ -1,0 +1,76 @@
+{
+  "name": "sapapa",
+  "version": "0.0.0",
+  "description": "A soothing CouchDB client for Reason/OCaml",
+  "esy": {
+    "build": "refmterr dune build -p #{self.name}",
+    "release": {
+      "releasedBinaries": []
+    }
+  },
+  "buildDirs": {
+    "test": {
+      "preprocess": [
+        "pps",
+        "lwt_ppx"
+      ],
+      "require": [
+        "sapapa",
+        "rely.lib"
+      ],
+      "bin": {
+        "TestApp.exe": "TestApp.re"
+      }
+    },
+    "library": {
+      "name": "sapapa",
+      "namespace": "Sapapa",
+      "preprocess": [
+        "pps",
+        "lwt_ppx",
+        "ppx_deriving.show",
+        "ppx_deriving.enum",
+        "ppx_deriving.make",
+        "ppx_deriving_yojson"
+      ],
+      "require": [
+        "lwt",
+        "cohttp",
+        "containers",
+        "threads",
+        "netstring",
+        "cohttp-lwt-unix",
+        "yojson",
+        "ppx_deriving_yojson.runtime"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "esy b dune runtest"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/lwt": "*",
+    "@opam/lwt_ppx": "*",
+    "@opam/ppx_deriving": "*",
+    "@opam/ppx_deriving_yojson": "*",
+    "@opam/yojson": "*",
+    "@opam/ocamlnet": "*",
+    "@opam/containers": "*",
+    "@opam/cohttp": "*",
+    "@opam/cohttp-lwt": "*",
+    "@opam/cohttp-lwt-unix": "*",
+    "@esy-ocaml/reason": "*",
+    "refmterr": "*",
+    "ocaml": "~4.6.0",
+    "pesy": "*",
+    "@reason-native/rely": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*"
+  },
+  "resolutions": {
+    "pesy": "esy/pesy#ba6359f25621280a8105d2ffc99d75d849c0d95a",
+    "@opam/ppx_deriving_yojson": "ocaml-ppx/ppx_deriving_yojson:ppx_deriving_yojson.opam#cadb5f653d4c2a94bc9e601c02dac75698cd5b97"
+  }
+}

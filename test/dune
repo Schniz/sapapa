@@ -1,0 +1,1 @@
+(test (name TestApp) (libraries sapapa rely.lib) (preprocess (pps lwt_ppx))) 

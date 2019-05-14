@@ -1,0 +1,6 @@
+(library (name Sapapa) (public_name sapapa)
+    (libraries lwt cohttp containers threads netstring cohttp-lwt-unix yojson
+        ppx_deriving_yojson.runtime)
+    (preprocess
+        (pps lwt_ppx ppx_deriving.show ppx_deriving.enum ppx_deriving.make
+            ppx_deriving_yojson))) 
