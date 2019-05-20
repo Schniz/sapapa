@@ -6,4 +6,4 @@ include Rely.Make({
     });
 });
 
-let testClient = () => Sapapa.Client.make(~baseUrl="http://localhost:5984", ());
+let testClient = () => Sapapa.Client.make(~baseUrl="http://localhost:5984");

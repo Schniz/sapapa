@@ -67,7 +67,8 @@
     "@reason-native/rely": "*"
   },
   "devDependencies": {
-    "@opam/merlin": "*"
+    "@opam/merlin": "*",
+    "@opam/rtop": "*"
   },
   "resolutions": {
     "pesy": "esy/pesy#ba6359f25621280a8105d2ffc99d75d849c0d95a",
