@@ -34,8 +34,10 @@ jobs:
   steps:
   # TODO: Uncomment both this and 'publish-build-cache' below to enable build caching for Mac.
   # - template: .ci/restore-build-cache.yml
-  - script: docker-compose up -d
-    displayName: 'Start services'
+  - script: brew install couchdb
+    displayName: 'Install CouchDB'
+  - script: brew services start couchdb
+    displayName: 'Start CouchDB'
   - template: .ci/esy-build-steps.yml
   # - template: .ci/publish-build-cache.yml
 
