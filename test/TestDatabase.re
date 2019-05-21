@@ -7,6 +7,13 @@ describe("Database", ({test, _}) => {
                                  );
 
   asyncTest("exists", ({expect}) => {
+    let%lwt _ =
+      Lwt.catch(
+        () =>
+          testClient() |> Client.usersDb |> Database.create |> Lwt.map(ignore),
+        _ => Lwt.return_unit,
+      );
+
     let%lwt exists = testClient() |> Client.usersDb |> Database.exists;
     expect.bool(exists).toBe(true);
     Lwt.return_unit;
