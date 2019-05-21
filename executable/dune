@@ -1,4 +1,0 @@
-(executable (name Reason_couchdb_managerApp)
-    (public_name Reason_couchdb_managerApp.exe)
-    (libraries sofa ppx_deriving_yojson.runtime cohttp cohttp-lwt-unix)
-    (preprocess (pps lwt_ppx ppx_deriving.std ppx_deriving_yojson))) 
