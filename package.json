@@ -38,7 +38,6 @@
         "cohttp",
         "containers",
         "threads",
-        "netstring",
         "cohttp-lwt-unix",
         "yojson",
         "ppx_deriving_yojson.runtime"
@@ -55,7 +54,6 @@
     "@opam/ppx_deriving": "*",
     "@opam/ppx_deriving_yojson": "*",
     "@opam/yojson": "*",
-    "@opam/ocamlnet": "*",
     "@opam/containers": "*",
     "@opam/cohttp": "*",
     "@opam/cohttp-lwt": "*",

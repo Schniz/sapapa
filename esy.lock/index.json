@@ -1,5 +1,5 @@
 {
-  "checksum": "8611d2d86f681455b980e2db7272a6a4",
+  "checksum": "6d2c2b491abec850d8fd786abd007a12",
   "root": "sapapa@link-dev:./package.json",
   "node": {
     "sapapa@link-dev:./package.json": {
@@ -19,7 +19,6 @@
         "@opam/yojson@opam:1.7.0@2d92307e",
         "@opam/ppx_deriving_yojson@github:ocaml-ppx/ppx_deriving_yojson:ppx_deriving_yojson.opam#cadb5f653d4c2a94bc9e601c02dac75698cd5b97@d41d8cd9",
         "@opam/ppx_deriving@opam:4.2.1@7927b93a",
-        "@opam/ocamlnet@opam:4.1.6@c22882d7",
         "@opam/lwt_ppx@opam:1.2.2@946c5ba2", "@opam/lwt@opam:4.2.1@c1888ec9",
         "@opam/dune@opam:1.9.3@cccbbfe7",
         "@opam/containers@opam:2.5@62a1f382",
@@ -1285,40 +1284,6 @@
       ],
       "devDependencies": [
         "ocaml@4.6.10@d41d8cd9", "@opam/sexplib0@opam:v0.11.0@9df6bcd1"
-      ]
-    },
-    "@opam/ocamlnet@opam:4.1.6@c22882d7": {
-      "id": "@opam/ocamlnet@opam:4.1.6@c22882d7",
-      "name": "@opam/ocamlnet",
-      "version": "opam:4.1.6",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/md5/6a/6a632896685421ff09e0c7ee3e17e79d#md5:6a632896685421ff09e0c7ee3e17e79d",
-          "archive:http://download2.camlcity.org/download/ocamlnet-4.1.6.tar.gz#md5:6a632896685421ff09e0c7ee3e17e79d",
-          "archive:http://download.camlcity.org/download/ocamlnet-4.1.6.tar.gz#md5:6a632896685421ff09e0c7ee3e17e79d"
-        ],
-        "opam": {
-          "name": "ocamlnet",
-          "version": "4.1.6",
-          "path": "esy.lock/opam/ocamlnet.4.1.6"
-        }
-      },
-      "overrides": [
-        {
-          "opamoverride":
-            "esy.lock/overrides/opam__s__ocamlnet_opam__c__4.1.6_opam_override"
-        }
-      ],
-      "dependencies": [
-        "ocaml@4.6.10@d41d8cd9", "@opam/ocamlfind@opam:1.8.0@f744a0c5",
-        "@opam/ocamlbuild@opam:0.14.0@427a2331",
-        "@opam/base-bytes@opam:base@19d0c2ff",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.6.10@d41d8cd9", "@opam/ocamlfind@opam:1.8.0@f744a0c5",
-        "@opam/base-bytes@opam:base@19d0c2ff"
       ]
     },
     "@opam/ocamlfind@opam:1.8.0@f744a0c5": {

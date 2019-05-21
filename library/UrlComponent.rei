@@ -9,3 +9,6 @@ let make_unsafe: string => t;
 
 /** Returns a safe URL component string */
 let encoded: t => string;
+
+/** Returns the decoded, unsafe component string */
+let decoded: t => string;
