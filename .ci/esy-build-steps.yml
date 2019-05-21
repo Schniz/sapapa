@@ -9,7 +9,7 @@ steps:
     displayName: 'npm install -g esy@0.5.6'
   - script: esy install
     displayName: 'esy install'
-  - script: esy pesy-configure
+  - script: esy pesy
     displayName: 'esy pesy'
   - script: esy build
     displayName: 'esy build'
