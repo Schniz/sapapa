@@ -1,5 +1,6 @@
 module Headers = {
   let defaults = Cohttp.Header.init_with("Accept", "application/json");
+  let defaults = Cohttp.Header.add(defaults, "Content-Type", "application/json");
   /* let merge = (headerA: Cohttp.Header.t, headerB: Cohttp.Header.t) => { */
   /*   Cohttp.Header.fold( */
   /*     (key, value, header) => Cohttp.Header.add(header, key, value), */

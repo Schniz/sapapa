@@ -22,7 +22,7 @@ let create = t => {
   let%lwt response =
     HttpClient.put(
       t.client,
-      ~body=`Null,
+      ~body=`Assoc([]),
       ~path=UrlComponent.encoded(t.name),
     );
 

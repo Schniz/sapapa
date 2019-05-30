@@ -70,11 +70,9 @@ describe("Document", ({test, _}) => {
       |> Client.db(~name=UrlComponent.make("test_documents"))
       |> Database.doc(~id=UrlComponent.make("test_update"));
     let body =
-      Yojson.Safe.from_string(
-        {|
-                    {"greeting": "hello"}
-                    |},
-      );
+      Yojson.Safe.from_string({|
+        {"greeting": "hello"}
+      |});
     let%lwt creation =
       doc |> Document.create(~body) |> Lwt.map(CCResult.get_exn);
 
