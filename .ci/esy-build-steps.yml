@@ -12,6 +12,3 @@ steps:
     displayName: 'esy build'
   - script: esy test
     displayName: 'esy test'
-  - script: esy ls-libs
-    continueOnError: true
-    displayName: 'Show all libraries including this package lib'

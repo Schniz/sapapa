@@ -1,6 +1,6 @@
 # Sapapa 😌
 
-[![CircleCI](https://circleci.com/gh/yourgithubhandle/reason_couchdb_manager/tree/master.svg?style=svg)](https://circleci.com/gh/yourgithubhandle/reason_couchdb_manager/tree/master)
+[![Build Status](https://dev.azure.com/galstar0385/sapapa/_apis/build/status/Schniz.sapapa?branchName=master)](https://dev.azure.com/galstar0385/sapapa/_build/latest?definitionId=5&branchName=master)
 
 > A soothing CouchDB client for native Reason and OCaml. Just Relax. 😌
 
