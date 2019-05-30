@@ -2,6 +2,14 @@
   "name": "sapapa",
   "version": "0.0.0",
   "description": "A soothing CouchDB client for Reason/OCaml",
+  "files": [
+    "library/",
+    "test/",
+    "dune",
+    "sapapa.opam",
+    "dune-project",
+    "sapapa.install"
+  ],
   "esy": {
     "build": "refmterr dune build -p #{self.name}",
     "release": {
