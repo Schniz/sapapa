@@ -27,7 +27,7 @@ describe("Document", ({test, _}) => {
       )
     );
 
-  asyncTest("creates a document", ({expect}) => {
+  asyncTest("creates a document", ({expect, _}) => {
     let%lwt _ = resetDb();
     let docName = "user_a";
     let doc = db |> Database.doc(~id=UrlComponent.make(docName));

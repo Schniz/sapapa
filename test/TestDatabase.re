@@ -6,7 +6,7 @@ describe("Database", ({test, _}) => {
                                    fn(x) |> Lwt_main.run
                                  );
 
-  asyncTest("exists", ({expect}) => {
+  asyncTest("exists", ({expect, _}) => {
     let%lwt _ =
       Lwt.catch(
         () =>
@@ -19,7 +19,7 @@ describe("Database", ({test, _}) => {
     Lwt.return_unit;
   });
 
-  asyncTest("creates and destroys databases", ({expect}) => {
+  asyncTest("creates and destroys databases", ({expect, _}) => {
     let database =
       testClient()
       |> Client.db(~name=UrlComponent.make("test_database_create_destroy"));

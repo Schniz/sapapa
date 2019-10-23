@@ -68,7 +68,7 @@
     "@opam/cohttp-lwt-unix": "*",
     "@esy-ocaml/reason": "*",
     "refmterr": "*",
-    "ocaml": "~4.6.0",
+    "ocaml": "> 4.6.0 < 4.8.0",
     "pesy": "*",
     "@reason-native/rely": "*"
   },
